@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- Header -->
+<header class="top-bar">
+    <div class="logo-container">
+      <img src="ad8b605c-93ea-40c0-8a79-532d3294bee3.png" alt="Pacific School Logo" class="school-logo">
+      <div class="logo-text">PACIFIC SENIOR SECONDARY SCHOOL</div>
+    </div>
+    <nav class="top-nav">
+      <a href="#">ATHLETICS</a>
+      <a href="#">EVENTS</a>
+      <a href="#">ALUMNAE</a>
+      <a href="login.html?role=admin" class="login-link admin">Admin Login</a>
+      <a href="login.html?role=student" class="login-link student">Student Login</a>
+    </nav>
+    
+  </header>
+  
+
+  <!-- Sub Navigation -->
+  <div class="sub-nav">
+    <nav>
+      <a href="academics.html">ACADEMICS</a>
+      <a href="courses.html">COURSES & FEES STRUCTURE</a>
+
+    </nav>
+    <a class="apply-btn" href="apply.html">APPLY NOW</a>
+  </div>
+
+ <!-- Notice Bar -->
+<div class="notice-bar" onclick="openCovidModal()">
+  📢 Campus COVID-19 Information (Click to View)
+</div>
+
+<!-- COVID Modal -->
+<div id="covidModal" class="modal">
+  <div class="modal-content">
+  </div>
+</div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>GET READY</h1>
+      <p>TO DISCOVER OUR COLLEGE</p>
+    </div>
+  </section>
+
+ <!-- Options Section -->
+ <section class="employee-section">
+  <a href="employees.html" class="employee-btn">View Employee Details</a>
+</section>
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
