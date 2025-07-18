@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .top-bar {
+    background-color: #2753a1;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    align-items: center;
+  }
+  
+  .top-bar .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .top-bar .top-nav a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .sub-nav {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1.5rem;
+    align-items: center;
+  }
+  
+  .sub-nav nav a {
+    margin-right: 1.2rem;
+    color: #052964;
+    text-decoration: none;
+    font-weight: 550;
+  }
+  
+  .apply-btn {
+    background-color: #c21807;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .notice-bar {
+    background-color: #b30000;
+    color: #fff;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero {
+    background: url('WhatsApp Image 2025-07-16 at 14.29.08.jpeg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    background: #fafafa;
+  }
+  
+  .employee-section {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .employee-btn {
+    background-color: #800000;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .employee-btn:hover {
+    background-color: #a00000;
+  }  
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .school-logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #800000;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 12px;
+    background-color: #800000;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #a00000;
+  }
+  .hero-academics {
+    background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 5px #000;
+    text-align: center;
+  }
+  
+  .hero-academics h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-academics p {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .academic-content, .curriculum {
+    padding: 3rem 1rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .department-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1.5rem;
+  }
+  
+  .department-card {
+    flex: 1 1 300px;
+    background: #fdfdfd;
+    padding: 1.5rem;
+    border-left: 5px solid #800000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+  }
+  
+  .curriculum ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  .page-title {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .page-title h1 {
+    font-size: 2rem;
+    color: #800000;
+  }
+  
+  .courses-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .courses-section h2 {
+    color: #b30000;
+    margin-top: 2rem;
+  }
+  
+  .courses-section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .fee-table th, .fee-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .fee-table th {
+    background-color: #f2f2f2;
+    color: #800000;
+  }
+  .employee-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .employee-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 220px;
+    transition: transform 0.3s ease;
+  }
+  
+  .employee-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .employee-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .employee-card h3 {
+    margin: 0.5rem 0 0.2rem;
+    color: #800000;
+  }
+  
+  .employee-card p {
+    margin: 2px 0;
+    color: #555;
+  }
+  .employee-section {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  .employee-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .employee-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .employee-card {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+/* Animation for cards when they appear */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to each card */
+.employee-card {
+  animation: fadeSlideUp 0.5s ease forwards;
+  opacity: 0; /* Start invisible, fade in with animation */
+  transform: translateY(30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animate hover interaction */
+.employee-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.login-body {
+  font-family: Arial, sans-serif;
+  background: #f3f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.role-selector button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-form button {
+  padding: 10px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+.dashboard-body {
+  font-family: Arial, sans-serif;
+  background: #eef3f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboard {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-actions button {
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.login-link {
+  padding: 8px 14px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-link.admin {
+  background-color: #0077cc;
+}
+
+.login-link.student {
+  background-color: #28a745;
+}
+
+.login-link:hover {
+  opacity: 0.9;
+}
+
+    
+    
+  
+  
+  
