@@ -24,11 +24,15 @@
 
   <!-- Hero Section -->
   <section class="hero-academics" id="heroSlider">
+    <div class="hero-bg-layer" id="bg1"></div>
+    <div class="hero-bg-layer" id="bg2"></div>
+  
     <div class="hero-text">
       <h1>Our Academic Excellence</h1>
-      <p>Explore Our Nurture,Scholar and future</p>
+      <p>Explore Our Nurture, Scholar and Future</p>
     </div>
   </section>
+  
   
 
   <!-- Academic Departments -->
@@ -76,17 +80,32 @@
     ];
   
     let current = 0;
-    const hero = document.getElementById('heroSlider');
+    let showingFirst = true;
+  
+    const bg1 = document.getElementById('bg1');
+    const bg2 = document.getElementById('bg2');
   
     function slideBackground() {
-      hero.style.backgroundImage = `url('${images[current]}')`;
+      const nextImage = `url('${images[current]}')`;
+  
+      if (showingFirst) {
+        bg2.style.backgroundImage = nextImage;
+        bg2.style.opacity = 1;
+        bg1.style.opacity = 0;
+      } else {
+        bg1.style.backgroundImage = nextImage;
+        bg1.style.opacity = 1;
+        bg2.style.opacity = 0;
+      }
+  
+      showingFirst = !showingFirst;
       current = (current + 1) % images.length;
     }
   
-    // Initial load
-    slideBackground();
+    // Initial setup
+    bg1.style.backgroundImage = `url('${images[0]}')`;
+    bg1.style.opacity = 1;
   
-    // Change image every 4 seconds
     setInterval(slideBackground, 4000);
   </script>
   
