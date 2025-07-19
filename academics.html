@@ -23,10 +23,13 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-academics">
-    <h1>Our Academic Excellence</h1>
-    <p>Dedicated to nurturing scholars, thinkers & future leaders</p>
+  <section class="hero-academics" id="heroSlider">
+    <div class="hero-text">
+      <h1>Our Academic Excellence</h1>
+      <p>Explore Our Nurture,Scholar and future</p>
+    </div>
   </section>
+  
 
   <!-- Academic Departments -->
   <section class="academic-content">
@@ -59,5 +62,33 @@
   </section>
 
   <script src="script.js"></script>
+  <script>
+    const images = [
+      'DSC_0092.jpg',
+      'DSC_0080.jpg',
+      'DSC_0077.jpg',
+      'DSC_0075.jpg',
+      'DSC_0081.jpg',
+      'DSC_0084.jpg',
+      'DSC_0095.jpg',
+      'DSC_0096.jpg',
+      'DSC_0106.jpg'
+    ];
+  
+    let current = 0;
+    const hero = document.getElementById('heroSlider');
+  
+    function slideBackground() {
+      hero.style.backgroundImage = `url('${images[current]}')`;
+      current = (current + 1) % images.length;
+    }
+  
+    // Initial load
+    slideBackground();
+  
+    // Change image every 4 seconds
+    setInterval(slideBackground, 4000);
+  </script>
+  
 </body>
 </html>
